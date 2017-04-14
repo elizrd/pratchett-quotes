@@ -1,7 +1,12 @@
 source 'https://rubygems.org'
 
+
+
 # Twitter Bootstrap 3 Gem
 gem 'bootstrap-sass', '~> 3.3.5.1'
+# Simple Form Generator Gem
+gem 'simple_form'
+
 gem 'sprockets', '2.11.0'
 
 # Rails 12factor Gem
