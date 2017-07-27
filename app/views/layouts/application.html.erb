@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Splurty</title>
+  <title>Terry Pratchett Quote Generator</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
   <header>
-    <div class="col-xs-3">
-      <%= link_to root_path, class: 'logo' do %>
-        <div class="circle">
-          <br />
-          Terry
-          <br />
-          Pratchett
-          <br />
-          Quotes
-        </div>
-      <% end %>
-    </div>
-    <div class="col-xs-4 hidden-xs slogan">
-      Splurting out unsolicited Terry Pratchett quotes since 2017
-    </div>
-    <div class='col-xs-8  col-xs-offset-1 col-sm-offset-0 col-sm-5 links'>
-      <!-- Button trigger modal -->
-      <%= link_to 'Contribute', '#', data: {toggle: 'modal', target: '#myModal'} %>
-       &nbsp;&nbsp;
-      <%= link_to 'About', about_path %>
-    </div>
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="col-xs-3">
+        <%= link_to root_path, class: 'logo' do %>
+          <div class="circle">
+            <br />
+            <br />
+            TPQ
+          </div>
+        <% end %>
+      </div>
+      <div class="col-xs-4 hidden-xs slogan">
+        Summoning unsolicited Terry Pratchett quotes since 2017
+      </div>
+      <div class='col-xs-8 col-xs-offset-1 col-sm-offset-0 col-sm-5 links'>
+        <!-- Button trigger modal -->
+        <%= link_to 'Contribute', '#', data: {toggle: 'modal', target: '#myModal'} %>
+         &nbsp;&nbsp;
+        <%= link_to 'About', about_path %>
+      </div>
+    </nav>
   </header>
 
   <!-- Modal -->
