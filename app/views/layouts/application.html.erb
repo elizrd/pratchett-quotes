@@ -43,7 +43,7 @@
           <div class="modal-body">
             <%= f.input :saying, label: "Quote:", placeholder: 'Write quote here' %>
             <br />
-            <%= f.input :author, label: "Author:", placeholder: 'Terry Pratchett' %>
+            <%= f.input :author, input_html: {value: f.object.author || 'Terry Pratchett'}, readonly: true %>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
